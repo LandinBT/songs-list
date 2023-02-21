@@ -1,7 +1,9 @@
-#include <iostream>
-
-using namespace std;
+#include "userinterface.hpp"
 
 int main() {
-    cout << "Hello world!" << endl;
+    ListSongs myList;
+
+    UserInterface showMenu(&myList);
+
+    showMenu.mainMenu();
     }
